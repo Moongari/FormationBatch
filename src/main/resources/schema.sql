@@ -15,7 +15,5 @@ CREATE TABLE `seances` (
   `code_formation` varchar(20) NOT NULL,
   `id_formateur` int(11) NOT NULL,
   `date_debut` date NOT NULL,
-  `date_fin` date NOT NULL,
-   CONSTRAINT `FK_FORMATEURS` FOREIGN KEY (`id_formateur`) REFERENCES `formateurs` (`id`),
-   CONSTRAINT `FK_FORMATIONS` FOREIGN KEY (`code_formation`) REFERENCES `formations` (`code`)
+  `date_fin` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

@@ -1,5 +1,5 @@
 # SPRING BATCH 
-Ce dépôt contient un exemple afin de présenter le Design Pattern decorateur
+Ce dépôt contient un exemple afin de présenter Spring Batch
  
 ## Démarrage rapide
 Pour tester ce code vous pouvez demarrer votre IDE habituelle est l'integrer dans votre IDE préférer rien de plus...
@@ -116,5 +116,5 @@ ajouter les dependances suivantes
  
 ### SPRING BATCH
 
-Creation d'une tasklet 
+creation d'un projet Formation avec Sprinbatch
 

@@ -118,3 +118,6 @@ ajouter les dependances suivantes
 
 creation d'un projet Formation avec Sprinbatch
 
+### Configuration du fichier application.properties
+https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#application-properties.data
+

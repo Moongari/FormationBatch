@@ -46,7 +46,7 @@ public class BatchConfig {
         return bean;
     }
 
-    @Bean
+  /*  @Bean
     public Step step1(StepBuilderFactory stepBuilderFactory){
         return stepBuilderFactory.get("step1")
                 .tasklet(new Tasklet() {
@@ -56,12 +56,12 @@ public class BatchConfig {
                         return RepeatStatus.FINISHED;
                     }
                 }).build();
-    }
+    }*/
 
     @Bean
-    public Job job(final JobBuilderFactory jobBuilderFactory){
+    public Job job(final JobBuilderFactory jobBuilderFactory,final Step ChargementFormateurStep){
         return jobBuilderFactory.get("formation-batch")
-                .start(step1(null))
+                .start(ChargementFormateurStep)
                 .validator(compositeJobParametersValidator())
                 .incrementer(new RunIdIncrementer())
                 .build();

@@ -11,7 +11,7 @@ import java.io.FileNotFoundException;
 
 public class FormationBatchApplication {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args)  {
 
 		SpringApplication.run(FormationBatchApplication.class, args);
 

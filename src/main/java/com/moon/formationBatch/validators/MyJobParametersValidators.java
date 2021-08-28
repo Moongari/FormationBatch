@@ -6,6 +6,9 @@ import org.springframework.batch.core.JobParametersValidator;
 import org.springframework.util.StringUtils;
 
 public class MyJobParametersValidators implements JobParametersValidator {
+
+
+
     @Override
     public void validate(JobParameters jobParameters) throws JobParametersInvalidException {
         //nous allons verifier les extensions des fichiers

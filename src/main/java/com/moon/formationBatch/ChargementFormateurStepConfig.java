@@ -45,6 +45,8 @@ public class ChargementFormateurStepConfig {
         return (items)-> items.forEach(System.out::println);
     }
 
+
+    //on definit un bean de type JDBCBatchItemWriter pour ecrire en BDD
     @Bean
     public JdbcBatchItemWriter<Formateur> formateurJdbcBatchItemWriter(final DataSource dataSource){
        return new JdbcBatchItemWriterBuilder<Formateur>()

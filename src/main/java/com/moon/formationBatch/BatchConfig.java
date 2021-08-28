@@ -58,10 +58,11 @@ public class BatchConfig {
                 }).build();
     }*/
 
-    @Bean
-    public Job job(final JobBuilderFactory jobBuilderFactory,final Step ChargementFormateurStep){
+    @Bean //ceci est le Batch qui va lancer nos différentes Step
+    public Job job(final JobBuilderFactory jobBuilderFactory,final Step ChargementFormateurStep, final Step chargementFormationStep){
         return jobBuilderFactory.get("formation-batch")
                 .start(ChargementFormateurStep)
+                .next(chargementFormationStep)
                 .validator(compositeJobParametersValidator())
                 .incrementer(new RunIdIncrementer())
                 .build();

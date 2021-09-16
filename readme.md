@@ -165,3 +165,4 @@ ALTER TABLE `seances`
   ADD CONSTRAINT `FK_FORMATEURS` FOREIGN KEY (`id_formateur`) REFERENCES `formateurs` (`id`),
   ADD CONSTRAINT `FK_FORMATIONS` FOREIGN KEY (`code_formation`) REFERENCES `formations` (`code`);
 
+test
